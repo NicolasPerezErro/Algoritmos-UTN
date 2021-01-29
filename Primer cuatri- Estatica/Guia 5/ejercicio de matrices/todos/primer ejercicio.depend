@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1588806555 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 5\ejercicio de matrices\primer ejercicio\matrices.cpp
+	<iostream>
+	"matrices.hpp"
+
+1525189262 c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 5\ejercicio de matrices\primer ejercicio\matrices.hpp
+	<string>
+
+1589386128 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 5\ejercicio de matrices\primer ejercicio\main.cpp
+	<iostream>
+	"matrices.hpp"
+	<math.h>
+
+1588806555 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 5\ejercicio de matrices\todos\matrices.cpp
+	<iostream>
+	"matrices.hpp"
+
+1525189262 c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 5\ejercicio de matrices\todos\matrices.hpp
+	<string>
+
+1589406690 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 5\ejercicio de matrices\todos\main.cpp
+	<iostream>
+	"matrices.hpp"
+	<math.h>
+

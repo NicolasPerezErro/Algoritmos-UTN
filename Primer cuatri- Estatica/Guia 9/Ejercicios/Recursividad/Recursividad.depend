@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1591196302 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 9\ejercicios\recursividad\vectores.cpp
+	<iostream>
+	<string>
+	"vectores.h"
+
+1591196302 c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 9\ejercicios\recursividad\vectores.h
+	<string>
+
+1591833164 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 9\ejercicios\recursividad\main.cpp
+	<iostream>
+	"vectores.h"
+	<stdio.h>
+

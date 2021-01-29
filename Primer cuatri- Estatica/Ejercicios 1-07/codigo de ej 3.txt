@@ -1,0 +1,180 @@
+int main(int argc, char** argv) {
+	
+	//Ejercicio 3 (clase anterior)
+	stock vecStock[100] = {{478,34,4},{123,78,1},{234,100,2},{345,300,3},{567,46,5}};
+	int lenStock = 5;
+	FILE * listaArch = fopen("listaDePrecios.dat","rb");
+	FILE * proximoIndentificador = fopen("proximoIndentificador.dat","rb+");
+	//  Abro los archivos para agregar al final y no pisar los registros que
+	//  ya tengo guardados
+	FILE * cabeceraArch = fopen("cabecera.dat","ab+");
+	FILE * detalleArch = fopen("detalle.dat","ab+");
+	
+	
+	detalle regDetalle;
+	cabecera regCabecera;
+	listaDePrecios regListaPrecios;
+	
+	int terminarIngresoDeFacturas;
+	int terminarIngresoDeArticulos;
+	int proxId;
+	int posArtEnStock;
+	
+    cout << "Bienvenido" << endl;
+	cout << "Para terminar con el ingreso de facturas, presione 0." << endl;
+	cin >> terminarIngresoDeFacturas;
+	while(terminarIngresoDeFacturas != 0){
+		
+		cout << "Ingrese el nro de cliente" << endl;
+		cin >> regCabecera.nroCliente;
+		
+		cout << "Ingrese la fecha" << endl;
+		cin >> regCabecera.fecha;
+		
+		fread(&proxId,sizeof(int),1,proximoIndentificador);
+		cout << "El id es" << proxId << endl;
+		
+		regCabecera.idFactura = proxId;
+		
+		regCabecera.totalFactura = 0;
+		
+		cout << "Para terminar con el ingreso de articulos, presione 0." << endl;
+		cin >> terminarIngresoDeArticulos;
+		while(terminarIngresoDeArticulos != 0) {
+			
+			regDetalle.idFactura = regCabecera.idFactura;
+			
+			cout << "Ingrese el articulo" << endl;
+			cin >> regDetalle.nroArticulo;
+			
+			cout << "Ingrese la cantidad" << endl;
+			cin >> regDetalle.cant;
+			
+			posArtEnStock = busquedaSecuencial(vecStock, lenStock, regDetalle.nroArticulo);
+			
+			if(posArtEnStock == -1){
+				cout << "Articulo no existente" << endl;
+			} else {
+				if(vecStock[posArtEnStock].cantUnidades >= regDetalle.cant) {
+					
+					vecStock[posArtEnStock].cantUnidades -= regDetalle.cant;
+					
+					fseek(listaArch,(vecStock[posArtEnStock].posListaDePrecios-1)*sizeof(listaDePrecios),SEEK_SET);
+					fread(&regListaPrecios,sizeof(listaDePrecios),1,listaArch);
+					regDetalle.precioUnitario = regListaPrecios.precioUnitario;
+					
+					regDetalle.totalArticulo = regDetalle.precioUnitario * regDetalle.cant;
+					
+					regCabecera.totalFactura += regDetalle.totalArticulo;
+					
+					fwrite(&regDetalle,sizeof(detalle),1,detalleArch);
+					
+				} else {
+					cout << "No hay cantidad suficiente, solo quedan " << vecStock[posArtEnStock].cantUnidades << " unidades." << endl;
+				}
+			}
+			
+			cout << "Para terminar con el ingreso de articulos, presione 0." << endl;
+			cin >> terminarIngresoDeArticulos;
+		}
+	
+		fwrite(&regCabecera,sizeof(cabecera),1,cabeceraArch);
+	    
+		rewind(proximoIndentificador);
+	    proxId = regCabecera.idFactura + 1;
+	    fwrite(&proxId,sizeof(int),1,proximoIndentificador);
+	    rewind(proximoIndentificador);
+		
+		cout << "Para terminar con el ingreso de facturas, presione 0." << endl;
+		cin >> terminarIngresoDeFacturas;
+	}
+	
+	imprimirCabeceras(cabeceraArch, regCabecera);
+	imprimirDetalles(detalleArch, regDetalle);
+		
+	fclose(listaArch);
+	fclose(proximoIndentificador);
+	fclose(cabeceraArch);
+	fclose(detalleArch);
+}
+
+
+void imprimirCabeceras(FILE * cabeceraArch, cabecera regCabecera) {
+	rewind(cabeceraArch);
+	
+	cout << "Cabeceras de las Facturas" << endl;
+	
+	fread(&regCabecera,sizeof(cabecera),1,cabeceraArch);
+	while(!feof(cabeceraArch)) {
+		cout << regCabecera.idFactura << endl;
+		cout << regCabecera.fecha << endl;
+		cout << regCabecera.nroCliente << endl;
+		cout << regCabecera.totalFactura << endl;
+		cout << "______________________________" << endl;
+		fread(&regCabecera,sizeof(cabecera),1,cabeceraArch);
+	}
+}
+
+void imprimirDetalles(FILE * detalleArch, detalle regDetalle){
+	rewind(detalleArch);
+	
+	cout << "Detalle de las Facturas" << endl;
+	
+	fread(&regDetalle,sizeof(detalle),1,detalleArch);
+	while(!feof(detalleArch)) {
+		cout << regDetalle.idFactura << endl;
+        cout << regDetalle.nroArticulo << endl;
+        cout << regDetalle.cant << endl;
+        cout << regDetalle.precioUnitario << endl;
+        cout << regDetalle.totalArticulo << endl;
+		cout << "______________________________" << endl;
+		fread(&regDetalle,sizeof(detalle),1,detalleArch);
+	}
+}
+
+int busquedaBinaria(int vec[], int len, int valorBuscado){
+	int pos = -1;
+	int primero = 0; 
+	int ultimo = len-1;
+	int medio = (primero + ultimo) / 2;
+	
+	while(primero <= ultimo) {
+		
+		if(vec[medio] == valorBuscado) {
+			pos = medio;
+			break;
+		} else if (vec[medio] < valorBuscado) {
+			primero = medio + 1;
+		} else {
+			ultimo = medio - 1;
+		}
+		
+		if(vec[primero] == valorBuscado) {
+			pos = primero;
+			break;
+		}
+		
+		if(vec[ultimo] == valorBuscado){
+			pos = ultimo;
+			break;
+		}
+		
+		medio = (primero + ultimo) / 2;
+	}
+	
+	return pos;
+}
+
+int busquedaSecuencial(stock vec[], int len, int valorBuscado){
+	int pos = -1;
+	
+	int i = 0;
+	while(i<len && vec[i].nroArt != valorBuscado) {
+		i++;
+	}
+	
+	if(vec[i].nroArt == valorBuscado) {
+		pos = i;
+	}
+	
+	return pos;

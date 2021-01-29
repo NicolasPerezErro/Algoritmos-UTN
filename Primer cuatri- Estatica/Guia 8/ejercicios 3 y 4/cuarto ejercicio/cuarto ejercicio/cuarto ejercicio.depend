@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1591198929 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 8\ejercicios 3 y 4\cuarto ejercicio\cuarto ejercicio\vectores.cpp
+	<iostream>
+	<string>
+	"vectores.h"
+
+1591198929 c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 8\ejercicios 3 y 4\cuarto ejercicio\cuarto ejercicio\vectores.h
+	<string>
+
+1591231140 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 8\ejercicios 3 y 4\cuarto ejercicio\cuarto ejercicio\main.cpp
+	<iostream>
+	"vectores.h"
+	<stdio.h>
+	<string.h>
+
+1591231140 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\primer cuatri- estatica\guia 8\ejercicios 3 y 4\cuarto ejercicio\cuarto ejercicio\main.cpp
+	<iostream>
+	"vectores.h"
+	<stdio.h>
+	<string.h>
+
+1591198929 c:\users\nicolas\desktop\sachen\utn\algoritmos\primer cuatri- estatica\guia 8\ejercicios 3 y 4\cuarto ejercicio\cuarto ejercicio\vectores.h
+	<string>
+
+1591198929 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\primer cuatri- estatica\guia 8\ejercicios 3 y 4\cuarto ejercicio\cuarto ejercicio\vectores.cpp
+	<iostream>
+	<string>
+	"vectores.h"
+

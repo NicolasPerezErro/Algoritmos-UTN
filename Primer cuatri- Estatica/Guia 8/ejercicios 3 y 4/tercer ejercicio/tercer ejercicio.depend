@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1591196302 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 8\ejercicios 3\tercer ejercicio\vectores.cpp
+	<iostream>
+	<string>
+	"vectores.h"
+
+1591196302 c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 8\ejercicios 3\tercer ejercicio\vectores.h
+	<string>
+
+1591196898 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 8\ejercicios 3\tercer ejercicio\main.cpp
+	<iostream>
+	"vectores.h"
+	<string.h>
+	<string>
+	<stdio.h>
+
+1591196302 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 8\ejercicios 3 y 4\tercer ejercicio\vectores.cpp
+	<iostream>
+	<string>
+	"vectores.h"
+
+1591196302 c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 8\ejercicios 3 y 4\tercer ejercicio\vectores.h
+	<string>
+
+1591228177 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 8\ejercicios 3 y 4\tercer ejercicio\main.cpp
+	<iostream>
+	"vectores.h"
+	<string.h>
+	<string>
+	<stdio.h>
+
+1597530188 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\primer cuatri- estatica\guia 8\ejercicios 3 y 4\tercer ejercicio\main.cpp
+	<iostream>
+	"vectores.h"
+	<string.h>
+	<string>
+	<stdio.h>
+
+1602767847 c:\users\nicolas\desktop\sachen\utn\algoritmos\primer cuatri- estatica\guia 8\ejercicios 3 y 4\tercer ejercicio\vectores.h
+	<string>
+
+1602767847 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\primer cuatri- estatica\guia 8\ejercicios 3 y 4\tercer ejercicio\vectores.cpp
+	<iostream>
+	<string>
+	"vectores.h"
+

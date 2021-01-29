@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1590635813 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 8\ejercicios\vectores.cpp
+	<iostream>
+	<string>
+	"vectores.h"
+
+1590638257 c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 8\ejercicios\vectores.h
+	<string>
+
+1590619080 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 8\ejercicios\main.cpp
+	<iostream>
+	"vectores.h"
+

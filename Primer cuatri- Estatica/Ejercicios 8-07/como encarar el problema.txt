@@ -1,0 +1,2 @@
+cargar un archivo en el archivo de finDeSemana.dat
+leo el otro archivo y voy comparando haber si esta la pelicula, si esta acumulo cantidad de espectadores y si no está la inserto en el archivo

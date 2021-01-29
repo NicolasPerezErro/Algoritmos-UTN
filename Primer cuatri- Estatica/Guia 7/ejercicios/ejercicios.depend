@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1590072841 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 7\ejercicios\main.cpp
+	<iostream>
+	"vectores.h"
+
+1590076110 c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 7\ejercicios\vectores.h
+	<string>
+
+1590072911 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 7\ejercicios\vectores.cpp
+	<iostream>
+	<string>
+	"vectores.h"
+
+1590076110 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\primer cuatri- estatica\guia 7\ejercicios\main.cpp
+	<iostream>
+	"vectores.h"
+
+1590076110 c:\users\nicolas\desktop\sachen\utn\algoritmos\primer cuatri- estatica\guia 7\ejercicios\vectores.h
+	<string>
+
+1590072911 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\primer cuatri- estatica\guia 7\ejercicios\vectores.cpp
+	<iostream>
+	<string>
+	"vectores.h"
+

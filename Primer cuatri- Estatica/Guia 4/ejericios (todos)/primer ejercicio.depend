@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1588208142 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 4\primer ejercicio\main.cpp
+	<iostream>
+	"vectores.h"
+
+1588208142 c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 4\primer ejercicio\vectores.h
+
+1588205893 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 4\primer ejercicio\vectores.cpp
+	<iostream>
+	"vectores.h"
+
+1588266630 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 4\ejericios (todos)\main.cpp
+	<iostream>
+	"vectores.h"
+
+1588208142 c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 4\ejericios (todos)\vectores.h
+
+1588266330 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 4\ejericios (todos)\vectores.cpp
+	<iostream>
+	"vectores.h"
+

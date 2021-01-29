@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1588806235 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 5\ejercicio temperatura\main.cpp
+	<iostream>
+	<string>
+	"matrices.hpp"
+
+1525189262 c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 5\ejercicio temperatura\matrices.hpp
+	<string>
+
+1525189294 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 5\ejercicio temperatura\matrices.cpp
+	<iostream>
+	"matrices.hpp"
+
+1514140574 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 5\ejercicio temperatura\matrices ejercicio\main.cpp
+	<iostream>
+

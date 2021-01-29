@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1592437389 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 11\ejercicios\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+

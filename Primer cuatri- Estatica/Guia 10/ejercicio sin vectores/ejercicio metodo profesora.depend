@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1592401942 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\guia 10\ejercicio metodo profesora\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+

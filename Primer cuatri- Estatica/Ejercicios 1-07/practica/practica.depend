@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1593649406 source:c:\users\nicolas\desktop\practica\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+
+1594246185 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\ejercicios 1-07\practica\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+
+1597267946 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\primer cuatri- estatica\ejercicios 1-07\practica\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+
