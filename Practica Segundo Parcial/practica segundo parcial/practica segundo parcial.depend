@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1605555746 source:c:\users\nicolas\desktop\sachen\utn\algoritmos\practica segundo parcial\practica segundo parcial\main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+
